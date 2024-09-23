@@ -1,0 +1,24 @@
+<form [formGroup]="maintenanceForm" (ngSubmit)="onSubmit()">
+  <label for="name">Name:</label>
+  <input id="name" formControlName="name" type="text" />
+
+  <label for="email">Email:</label>
+  <input id="email" formControlName="email" type="email" />
+
+  <label for="unitNumber">Unit Number:</label>
+  <input id="unitNumber" formControlName="unitNumber" type="text" />
+
+  <label for="serviceType">Service Type:</label>
+  <input id="serviceType" formControlName="serviceType" type="text" />
+
+  <label for="summary">Summary:</label>
+  <input id="summary" formControlName="summary" type="text" />
+
+  <label for="details">Details:</label>
+  <textarea id="details" formControlName="details"></textarea>
+
+  <button type="submit" (onClick) = "onSubmit()">Submit</button>
+  <a  style="margin-left: 190px;" routerLink="/admin-login" class="admin-login-button">Go to Admin Login</a>
+
+</form>
+
